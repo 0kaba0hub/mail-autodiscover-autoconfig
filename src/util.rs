@@ -18,10 +18,7 @@ pub fn get_custom_domains_list() -> String {
 }
 
 fn get_pop_leave_on_server_from_env() -> Option<u32> {
-    match env::var("POP_LEAVE_ON_SERVER") {
-        Ok(val) => val.parse::<u32>().ok().filter(|&v| v > 0),
-        Err(_) => None,
-    }
+    env::var("POP_LEAVE_ON_SERVER").ok().and_then(|val| val.parse::<u32>().ok())
 }
 
 pub fn get_config_for_domain(domain: &str) -> Config {
