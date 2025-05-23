@@ -278,7 +278,7 @@ mod tests {
                 ("IMAP_HOSTNAME", Some("imap.foo.tld")),
                 ("POP_HOSTNAME", Some("pop.example.tld")),
                 ("SMTP_HOSTNAME", Some("smtp.domain.tld")),
-                ("pop_leave_on_server", Some("0")),
+                ("POP_LEAVE_ON_SERVER", Some("0")),
             ],
             || {
                 assert_eq!(
@@ -300,7 +300,7 @@ mod tests {
                 ("IMAP_HOSTNAME", Some("imap.custom.tld")),
                 ("POP_HOSTNAME", Some("pop.example.tld")),
                 ("SMTP_HOSTNAME", Some("smtp.domain.tld")),
-                ("pop_leave_on_server", Some("0")),
+                ("POP_LEAVE_ON_SERVER", Some("0")),
             ],
             || {
                 assert_eq!(
@@ -321,7 +321,7 @@ mod tests {
                 ("IMAP_HOSTNAME", Some("imap.custom.tld")),
                 ("POP_HOSTNAME", Some("pop.example.tld")),
                 ("SMTP_HOSTNAME", Some("smtp.domain.tld")),
-                ("pop_leave_on_server", Some("0")),
+                ("POP_LEAVE_ON_SERVER", Some("0")),
             ],
             || {
                 assert_eq!(
