@@ -4,8 +4,7 @@ _imaps._tcp.{{ domain }}.	SRV	0	1	993	{{ imap_hostname }}.
 _pop3._tcp.{{ domain }}.	SRV	0	1	110	{{ pop_hostname }}.
 _pop3s._tcp.{{ domain }}.	SRV	0	1	995	{{ pop_hostname }}.
 _submission._tcp.{{ domain }}.	SRV	0	1	587	{{ smtp_hostname }}.
-; Not secure and usually blocked by ISP
-;_submission._tcp.{{ domain }}.	SRV	10	1	25	{{ smtp_hostname }}.
+_submission._tcp.{{ domain }}.	SRV	0	2	25	{{ smtp_hostname }}.
 ; This is a record according to RFC8314
 _submissions._tcp.{{ domain }}.	SRV	0	1	465	{{ smtp_hostname }}.
 ; This is a Microsoft Exchange record
