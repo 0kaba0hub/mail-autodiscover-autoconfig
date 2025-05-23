@@ -288,7 +288,7 @@ mod tests {
                         imap_hostname: "imap.foo.tld".to_string(),
                         pop_hostname: "pop.foo.tld".to_string(),
                         smtp_hostname: "smtp.foo.tld".to_string(),
-                        pop_leave_on_server: Some(0),
+                        pop_leave_on_server: "0".to_string(),
                     },
                     get_config_for_domain("foo.tld")
                 );
